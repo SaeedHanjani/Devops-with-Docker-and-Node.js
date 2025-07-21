@@ -32,12 +32,38 @@ connectWithRetry();
 
 app.use(express.json()); 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 app.get("/", (req, res) => {
-   res.send("<h2>Hi There!@!</h2>");
-});
+    res.send("<h2>Hi There!@!</h2>")
+})
 
 //localhost:3000/api/v1/post/
-app.use("/api/v1/posts", postRouter");
+app.use("/api/v1/posts", postRouter);
 app.use("/api/v1/users", userRouter);
 const port = process.env.PORT || 3000;
 
