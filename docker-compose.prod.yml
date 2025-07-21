@@ -11,4 +11,3 @@ services:
     command: node index.js
     ports:
       - "3000:3000"
-    
